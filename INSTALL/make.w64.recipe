@@ -1,0 +1,4 @@
+1) Use amd64 Gentoo Linux.
+2) Install cross-x86_64-w64-mingw32/gcc via crossdev
+3) ARCH=amd64 x86_64-w64-mingw32-emerge =sys-devel/make-4.2.1
+4) The executable is at /usr/x86_64-w64-mingw32/usr/bin/gmake.exe

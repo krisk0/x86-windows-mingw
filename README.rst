@@ -5,4 +5,4 @@ This repository contains known-to-work recipes for building must-have software f
 
 The recipes are in ``INSTALL/`` directory.
 
-As of 12 Sept 2016, there are only two recipes.
+As of 29 Sept 2016, recipes for busybox and make are offered.
