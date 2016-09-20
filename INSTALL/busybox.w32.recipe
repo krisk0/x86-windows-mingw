@@ -1,5 +1,5 @@
 1) Use amd64 or i686 Gentoo Linux.
 2) Install cross-i686-w64-mingw32/gcc via crossdev .
-2) Place busybox-20160306.ebuild into /your/private/overlay/windows-apps/busybox/
+2) Place busybox-20160916.ebuild into /your/private/overlay/windows-apps/busybox/
 3) On amd64, issue command 'BITS=32 ebuild --skip-manifest /your/private/overlay/windows-apps/busybox/busybox*ebuild clean compile install'. On i686, issue the command without BITS=32.
 4) If all goes well, busybox.exe for 32-bit Windows should make it into /tmp/portage/windows-apps/busybox/image .
