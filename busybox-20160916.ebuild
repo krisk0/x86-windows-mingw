@@ -14,7 +14,7 @@ SLOT=windows
 RESTRICT=test
 
 d=
-( use x86 || BITS=32 ) && d=cross-i686-w64-mingw32/gcc
+( [ .$BITS == .32 ] || use x86 ) && d=cross-i686-w64-mingw32/gcc
 [ -z $d ] && d=cross-x86_64-w64-mingw32/gcc
 DEPEND=" $(echo $d) "
 
@@ -28,7 +28,7 @@ src_unpack()
 
 src_configure()
  {
-  ( use x86 || BITS=32 ) && make mingw32_defconfig
+  ( [ .$BITS == .32 ] || use x86 ) && make mingw32_defconfig
   [ -f .config ] || make mingw64_defconfig
   # realpath does not work, don't bother trying to build it
   # sed -i 's:#.CONFIG_REALPATH.*:CONFIG_REALPATH=y:' .config
